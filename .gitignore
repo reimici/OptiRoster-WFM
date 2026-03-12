@@ -1,23 +1,11 @@
-# ==========================================
-# OptiRoster WFM - Security & Ignore Policy
-# ==========================================
+# Blocca le cartelle .streamlit ovunque si trovino nell'albero
+**/.streamlit/
+**/secrets.toml
 
-# 1. Ambienti Virtuali e Cache di Compilazione
-venv/
-env/
-__pycache__/
-*.pyc
+# Blocca i certificati ovunque
+**/credentials.json
+**/token.json
 
-# 2. Secreti Crittografici (BARRIERA DI SICUREZZA ASSOLUTA)
-.streamlit/
-secrets.toml
-credentials.json
-token.json
-
-# 3. File di Sistema Operativo
-.DS_Store
-Thumbs.db
-
-# 4. File di Log e Test
-*.log
-Turni_Test_Isolato.pdf
+# Blocca gli ambienti virtuali
+**/venv/
+**/__pycache__/

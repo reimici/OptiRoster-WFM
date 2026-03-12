@@ -1,0 +1,14 @@
+# ==========================================
+# OptiRoster WFM - Calendar Sync Node
+# Runtime Dependencies Manifest
+# ==========================================
+
+# 1. Presentation Layer (GUI & File Buffer)
+streamlit>=1.32.0
+
+# 2. Semantic Engine (Gemini Pro/Flash Multimodal)
+google-genai>=0.1.0
+
+# 3. Google API & OAuth 2.0 Security Protocol
+google-api-python-client>=2.110.0
+google-auth-oauthlib>=1.2.0
